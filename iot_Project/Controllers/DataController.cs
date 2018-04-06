@@ -15,7 +15,9 @@ namespace iot_Project.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            Json json = new Json();
+            
+            return json.LoadJson();
         }
 
         // GET: api/Data/5
