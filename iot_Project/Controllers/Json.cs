@@ -12,7 +12,7 @@ namespace iot_Project.Controllers
 
         public List<string> LoadJson()
         {
-            System.IO.StreamReader file = new System.IO.StreamReader("C:\\Users\\Bjørn\\Documents\\GIT\\IoT\\ou44_geometry.geojson.txt");
+            System.IO.StreamReader file = new System.IO.StreamReader("..\\iot_Project\\wwwroot\\Data\\ou44_geometry.geojson.txt");
             string content = file.ReadToEnd();
             file.Close();
 
